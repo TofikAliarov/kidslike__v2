@@ -1,0 +1,164 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.informItem_container {
+  width: 280px;
+  height: 224px;
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.informItem_information {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  box-shadow: 0px 2px 0px 0px #ffbe9d;
+}
+
+.informItem_block__name {
+  display: flex;
+  padding-left: 20px;
+}
+
+.informItem_genderImage {
+  display: block;
+  margin-right: 15px;
+}
+
+.informItem_name {
+  align-self: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.informItem_block__balance {
+  align-self: center;
+  padding-right: 21px;
+  position: relative;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.informItem_balance::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/infoOnChild/star.svg') no-repeat;
+  position: absolute;
+  left: -26px;
+  top: 2px;
+}
+
+.informItem_tasks {
+  box-shadow: 0px 2px 0px 0px #ffbe9d;
+  height: 96px;
+}
+
+.informItem_list__tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.informItem_oneTask {
+  display: flex;
+  padding: 20px 20px 0px 20px;
+  justify-content: space-between;
+}
+
+.informItem_link {
+  display: flex;
+  padding: 20px 20px 21px 20px;
+  justify-content: space-between;
+}
+
+.informItem_block__link {
+  height: 65px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.informItem_block__link:hover {
+  background-color: #ffa273;
+  transition: 250ms;
+}
+
+.informItem_block__link:hover .informItem_linkName {
+  color: #fff;
+}
+
+.informItem_text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+.informItem_linkName {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ff8626;
+}
+
+@media (min-width: 748px) {
+  .informItem_container {
+    width: 336px;
+  }
+
+  .informItem_block__balance {
+    padding-right: 31px;
+  }
+
+  .informItem_oneTask {
+    padding: 20px 31px 0px 30px;
+  }
+
+  .informItem_link {
+    padding: 20px 31px 21px 30px;
+  }
+
+  .informItem_block__name {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .informItem_container {
+    width: 345px;
+  }
+}

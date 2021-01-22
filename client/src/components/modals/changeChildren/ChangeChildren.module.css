@@ -1,0 +1,260 @@
+.modalBody {
+  width: 100%;
+  height: 618px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.title {
+  margin-top: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form {
+  flex-wrap: wrap;
+}
+.inputBlock {
+  text-align: left;
+}
+.label {
+  margin-bottom: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.inputName {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.input {
+  padding-left: 20px;
+  font-size: 16px;
+  width: 280px;
+  height: 44px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.input:focus {
+  border: 1px solid #ffbe9d;
+  outline: transparent;
+}
+
+.inputMark {
+  width: 170px;
+  height: 44px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.inputMark:focus {
+  border: 1px solid #ffbe9d;
+}
+
+.buttonSave {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  width: 220px;
+  height: 44px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #ff8626;
+  border-radius: 20px;
+}
+
+.buttonCancle {
+  display: block;
+  margin: 15px auto;
+  outline: none;
+  width: 220px;
+  height: 44px;
+  color: #828282;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.buttonSave:hover {
+  background: #ffa273;
+}
+.buttonCancle:hover {
+  background: #ffffff;
+  color: #ff8626;
+  border: 1px solid #ff8626;
+}
+
+.btnDelete {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.btnDeleteIcon {
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  background-image: url('../../../img/trash.svg');
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.btnDelete,
+.btnDelete:active,
+.btnDelete:focus {
+  outline: none;
+}
+
+.modalCloseBtn {
+  padding: 0;
+  background-image: url('../../../img/close.svg');
+  background-position: center;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.buttonsBlock {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.customLabel {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.customLabel > input[type='radio'] {
+  display: none;
+}
+
+.customLabel > span {
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 20%;
+  vertical-align: middle;
+}
+
+.customLabel > input[type='radio']:checked + span {
+  border: 1px solid #ffbe9d;
+  background-image: url('../../../img/star.svg');
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.customName {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: auto 25px;
+
+  color: #828282;
+}
+.customName:last-child {
+  margin-right: 0px;
+}
+
+.inputBlock {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.childrenTitle {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .modalBody {
+    width: 575px;
+    height: 410px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+
+  .buttonsBlock {
+    display: flex;
+    width: 455px;
+    direction: rtl;
+  }
+
+  .buttonsBlock button {
+    display: table-cell;
+  }
+
+  .form {
+    display: block;
+  }
+  .inputBlock {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 0 auto;
+  }
+  .input {
+    width: 340px;
+  }
+  .buttonSave {
+    margin: 0;
+  }
+
+  .buttonCancle {
+    margin: 0;
+    margin-right: 15px;
+  }
+}

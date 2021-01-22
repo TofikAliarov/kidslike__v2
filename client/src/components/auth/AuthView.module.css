@@ -1,0 +1,35 @@
+/* Не очень хороший тон изменять цвет body
+div id='root' должен занимать все пространство въюпорта
+*/
+
+@media screen and (max-width: 767px) {
+  /* body{
+    background-color: #fff;
+  } */
+  .container {
+    min-width: 321px;
+    margin: 0 auto;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: #ff8626;
+  }  */
+/* }  */
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}

@@ -1,0 +1,85 @@
+.btn{
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: block;
+  font-family: Rubik;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid;
+  outline: none;
+}
+
+.btn.google{
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-color: #EC4541;
+  color: #EC4541;
+  position: relative;
+  z-index: 0;
+}
+
+.btn.google:before {
+  content:'';
+  z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 0;
+  opacity: 0;
+  height: 42px;
+  border-radius: 20px;
+	background-color: #f7e1e1;
+	transition: all 0.5s ease;
+}
+
+.btn.facebook:before {
+  content:'';
+  z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 0;
+  opacity: 0;
+  height: 42px;
+  border-radius: 20px;
+	background-color: #e0e8ff;
+	transition: all 0.5s ease;
+}
+
+.btn.facebook{
+  padding-left: 14px;
+  padding-right: 14px;
+  border-color: #305B94;
+  color: #305B94;
+  position: relative;
+  z-index: 0;
+}
+
+.btn.facebook:hover,
+.btn.facebook:focus{
+  color: #0d3569;
+}
+
+.btn.facebook:hover:before,
+.btn.facebook:focus:before {
+  width: 100%;
+  opacity: 1;
+}
+.btn.google:hover,
+.btn.google:focus{
+  color: #df0d09;
+}
+
+.btn.google:hover:before,
+.btn.google:focus:before {
+  width: 100%;
+  opacity: 1;
+}

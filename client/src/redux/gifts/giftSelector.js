@@ -1,0 +1,1 @@
+export const getAllGifts = state => state.gifts;

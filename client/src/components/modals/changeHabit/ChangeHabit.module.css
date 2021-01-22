@@ -1,0 +1,235 @@
+.modalBody {
+  width: 100%;
+  height: 568px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.title {
+  margin-top: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.form {
+  flex-wrap: wrap;
+}
+.inputBlock {
+  text-align: left;
+}
+.label {
+  margin-bottom: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.inputName {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.input {
+  padding-left: 20px;
+  font-size: 16px;
+  width: 95%;
+  height: 44px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.input:focus {
+  border: 2px solid #ffbe9d;
+  outline: transparent;
+}
+
+.select {
+  cursor: pointer;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 95%;
+  height: 44px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+  appearance: none;
+  background: url(../../../img/svg/select-triangle.svg) 96% / 15% no-repeat;
+  background-size: 15px;
+}
+
+.select:focus {
+  border: 2px solid #ffbe9d;
+  outline: transparent;
+}
+
+.inputMark {
+  padding-left: 40px;
+  width: 170px;
+  height: 44px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-size: 16px;
+  background: url(../../../img/svg/star_small.svg) 12% / 15% no-repeat;
+  background-size: 17px;
+}
+
+.inputMark:focus {
+  border: 2px solid #ffbe9d;
+  outline: transparent;
+}
+
+.buttonSave {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  width: 220px;
+  height: 44px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #ff8626;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.buttonCancle {
+  display: block;
+  margin: 15px auto;
+  outline: none;
+  width: 220px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.btnDelete {
+  display: flex;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnDeleteIcon {
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  background-image: url('../../../img/trash.svg');
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btnDelete,
+.btnDelete:active,
+.btnDelete:focus {
+  outline: none;
+}
+
+.modalCloseBtn {
+  padding: 0;
+  background-image: url('../../../img/close.svg');
+  background-position: center;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.buttonsBlock {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.buttonSave:hover {
+  background: #ffa273;
+}
+.buttonCancle:hover {
+  background: #ffffff;
+  color: #ff8626;
+  border: 1px solid #ff8626;
+}
+
+@media screen and (min-width: 768px) {
+  .modalBody {
+    width: 575px;
+    height: 517px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+
+  .buttonsBlock {
+    display: flex;
+    width: 455px;
+    direction: rtl;
+  }
+
+  .buttonsBlock button {
+    display: table-cell;
+  }
+
+  .form {
+    display: block;
+  }
+  .inputBlock {
+    display: grid;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 0 auto;
+  }
+  .input {
+    width: 340px;
+  }
+
+  .select {
+    width: 340px;
+  }
+
+  .buttonSave {
+    margin: 0;
+  }
+
+  .buttonCancle {
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  .btnDelete {
+    margin-top: 10px;
+  }
+}

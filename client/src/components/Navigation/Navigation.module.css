@@ -1,0 +1,109 @@
+.navLink {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  padding: 0;
+}
+
+.listItem {
+  width: 194px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.listItem:first-child {
+  display: none;
+}
+
+.listItem:not(:last-child) {
+  margin-right: 40px;
+}
+
+.listItem:last-child {
+  margin-right: 81px;
+}
+.active,
+.listItem:hover {
+  background-color: transparent;
+  border: 1px solid #bdbdbd;
+}
+
+.itemImg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .listItem {
+    width: 160px;
+    height: 44px;
+  }
+  .navLink {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navList {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .familySpan,
+  .navLink > span {
+    display: none;
+  }
+  .listItem {
+    width: 44px;
+    height: 44px;
+  }
+  .listItem:last-child {
+    margin-right: 0;
+  }
+  .listItem.family {
+    width: 44px;
+  }
+  .itemImg {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .listItem.family {
+    width: 96px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .listItem:first-child {
+    display: flex;
+  }
+}

@@ -1,0 +1,139 @@
+.habitItemFolder {
+  position: relative;
+  display: flex;
+  padding: 15px 15px 2px;
+}
+
+.avatar {
+  position: absolute;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  margin-right: 20px;
+}
+
+.habitContentWrapper {
+  position: relative;
+}
+
+.habitTitle {
+  display: inline-block;
+  margin: 0 0 0 95px;
+  vertical-align: middle;
+  color: #333333;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.daysList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 95px;
+  width: 400px;
+}
+
+.daysItem {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background-color: #f6f7f9;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.daysItem_active {
+  composes: daysItem;
+  border: 2px solid #ff8626;
+}
+
+.daysItem_done {
+  composes: daysItem;
+  background-color: #f0f7aa;
+}
+
+.daysItem_notdone {
+  composes: daysItem;
+  background-color: #f7d5ba;
+}
+
+.daysItem:first-child {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.daysItem:last-child {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.points {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #828282;
+  font-family: Rubik;
+}
+
+.points_checked {
+  composes: points;
+  color: transparent;
+}
+
+.text {
+  margin: 3px 5px 0 auto;
+  width: 28px;
+  height: 20px;
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+
+@media (max-width: 767px) {
+  .habitItemFolder {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .avatar {
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  .habitTitle {
+    margin-left: 45px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .daysList {
+    margin: 17px 0 0;
+    width: 250px;
+  }
+
+  .daysItem {
+    padding: 6px;
+    width: 25.86px;
+    height: 25.86px;
+  }
+
+  .points {
+    display: block;
+  }
+
+  .text {
+    margin: 3px 0 0 auto;
+  }
+}

@@ -1,0 +1,87 @@
+.submitBox {
+  margin-left: 40px;
+  text-align: center;
+  min-width: 95px;
+}
+
+.submitBoxTitle {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #828282;
+}
+
+@media (max-width: 768px) {
+  .submitBox {
+    margin-left: 0;
+  }
+
+  .submitBoxTitle {
+    margin-top: 0;
+  }
+}
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid #ffbe9d;
+  cursor: pointer;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button:last-child {
+  margin-left: 15px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ffdfcf;
+}
+
+.checkBtn {
+  composes: button;
+  background-image: url(../../../img/svg/check-orange.svg);
+}
+
+.checkBtnActive {
+  composes: button;
+  margin-right: 10px;
+  background-image: url(../../../img/svg/check-white.svg);
+}
+
+.checkBtnDisabled {
+  composes: button;
+  margin-right: 10px;
+  background-image: url(../../../img/svg/check-grey.svg);
+}
+
+.crossBtn {
+  composes: button;
+  background-image: url(../../../img/svg/cross-orange.svg);
+}
+
+.crossBtnActive {
+  composes: button;
+  background-image: url(../../../img/svg/cross-white.svg);
+}
+
+.crossBtnDisabled {
+  composes: button;
+  background-image: url(../../../img/svg/cross-grey.svg);
+}
+
+.repeatBtn {
+  composes: button;
+  display: inline-block;
+  margin-left: 0;
+  background-image: url(../../../img/svg/repeat-orange.svg);
+}
+
+.repeatBtn:last-child {
+  margin-left: 0;
+}

@@ -1,0 +1,47 @@
+.header {
+  /* position: fixed; */
+  background: transparent;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerPrivate {
+  background: transparent;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  /* height: 64px; */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .header {
+    justify-content: center;
+  }
+  .headerPrivate {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-wrap: wrap;
+    height: 132px;
+
+    max-width: 420px;
+  }
+}
+
+.userLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}

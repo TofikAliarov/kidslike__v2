@@ -1,0 +1,78 @@
+    [
+        {
+            "childName": "John",
+            "gender": "boy",
+            "habitName": "20 pages of book",
+            "points": 5,
+            "startDate": 1607424880553,
+            "days": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        },
+        {
+            "childName": "Mary",
+            "gender": "girl",
+            "habitName": "cooking dinner",
+            "points": 5,
+            "startDate": 1607425062011,
+            "days": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        },
+        {
+            "childName": "Mary",
+            "gender": "girl",
+            "habitName": "20 minutes of yoga",
+            "points": 4,
+            "startDate": 1607425000011,
+            "days": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        },
+        {
+            "childName": "Petro",
+            "gender": "boy",
+            "habitName": "40 minutes of yoga",
+            "points": 6,
+            "startDate": 1607425000011,
+            "days": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        }
+    ]

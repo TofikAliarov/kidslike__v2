@@ -1,0 +1,34 @@
+    [
+        {
+            "childName": "John",
+            "gender": "boy",
+            "taskName": "20 pages of book",
+            "points": 5,
+            "startDate": 1607424880553,
+            "daysToComplete": 1
+        },
+        {
+            "childName": "Mary",
+            "gender": "girl",
+            "taskName": "cooking dinner",
+            "points": 4,
+            "startDate": 1607425062011,
+            "daysToComplete": 2
+        },
+        {
+            "childName": "Mary",
+            "gender": "girl",
+            "taskName": "20 minutes of yoga",
+            "points": 3,
+            "startDate": 1607425000011,
+            "daysToComplete": null
+        },
+        {
+            "childName": "Brad",
+            "gender": "boy",
+            "taskName": "30 minutes of swimming",
+            "points": 5,
+            "startDate": 1607425000011,
+            "daysToComplete": null
+        }
+    ]

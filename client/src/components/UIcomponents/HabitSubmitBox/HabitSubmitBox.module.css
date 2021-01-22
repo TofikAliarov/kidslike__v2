@@ -1,0 +1,25 @@
+.submitBox {
+  margin-left: 40px;
+  text-align: center;
+  min-width: 95px;
+}
+
+.submitBoxTitle {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #828282;
+}
+
+@media (max-width: 767px) {
+  .submitBox {
+    margin-left: 0;
+  }
+
+  .submitBoxTitle {
+    margin-top: 0;
+  }
+}

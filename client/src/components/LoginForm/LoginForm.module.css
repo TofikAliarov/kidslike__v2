@@ -1,0 +1,38 @@
+.btn_centred{
+  text-align: center;
+}
+
+.relative{
+  position: relative;
+}
+
+@media screen and (max-width:767px){
+  .relative{
+    width: 280px;
+    margin: 0 auto;
+  }
+  .notification{
+    position: static;
+    width: 280px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .notification{
+   position: absolute;
+   width: 565px;
+  }
+}
+
+.notification{
+  left: -112px;
+  top: -108px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 0px;
+  
+  text-align: center;
+  margin: 0 auto 15px;
+  font-size: 12px;
+}

@@ -1,0 +1,183 @@
+.title {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0em;
+}
+
+.leftSideBarCard {
+  /* width: 100%; */
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 30px 20px;
+}
+
+.moreButton_wraper {
+  margin-top: -26px;
+  margin-right: -5px;
+  padding-bottom: 6px;
+}
+
+.leftSideBarAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+}
+
+.task {
+  border-bottom: 1px solid #ffbe9d;
+  border-top: 1px solid #ffbe9d;
+}
+
+.childName {
+  font-size: 22px;
+  font-weight: 900;
+  display: inline-block;
+  /* margin-bottom: -3px; */
+  margin-left: 15px;
+}
+
+.childTitle {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  margin-left: auto;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    /* margin-left: auto; */
+    min-width: 345px;
+    margin: 0 40px;
+    text-align: left;
+  }
+}
+
+.cardsContainer {
+  margin-bottom: 100px;
+}
+
+.titleName {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.iconFamily {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.habitsList {
+  margin-bottom: 20px;
+  display: flex;
+}
+.habitsList:first-child {
+  margin-top: 20px;
+}
+
+.arrowText {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: #ff8626;
+  display: flex;
+  margin-top: 20px;
+}
+
+.arrow {
+  margin-left: auto;
+}
+
+.spanText {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #828282;
+}
+
+.spanNumber {
+  margin-left: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #828282;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    /* display: none; */
+    /* opacity: 0; */
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(-250%);
+    transition: transform 500ms ease-in-out;
+    z-index: 1;
+    background-color: #e5e5e5;
+    height: 150%;
+    width: 100%;
+  }
+  .renderClass {
+    /* display: block; */
+    background-color: #e5e5e5;
+    /* height: 170%; */
+    height: 100vh;
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(0%);
+    /* opacity: 1; */
+    transition: transform 500ms ease-in-out;
+  }
+  .leftSideBarCard {
+    /* width: 45%; */
+    max-width: 335px;
+    margin-right: 10px;
+  }
+  .cardsContainer {
+    /* width: 40%; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .titleName {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .leftSideBarCard {
+    min-width: 280px;
+    /* max-width: 337px; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .cardsContainer {
+    margin-bottom: 60px;
+  }
+
+  .container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .leftSideBarCard {
+    width: 45%;
+    min-width: 335px;
+    margin-right: 10px;
+  }
+}

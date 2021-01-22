@@ -1,0 +1,217 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 56px;
+}
+
+.giftImageThumb {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 317px;
+  height: 179px;
+}
+
+.giftImage {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.giftIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.giftImageContainer {
+  position: relative;
+}
+
+.giftAvatarContainer {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifsTitleContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.giftAvatar {
+  width: 30px;
+  height: 30px;
+}
+
+.giftTitle {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0em;
+}
+
+.giftName {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0 0 10px;
+}
+
+.GiftContainer {
+  margin-bottom: 30px;
+}
+
+.GiftList {
+  margin: -7px;
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.giftCard {
+  position: relative;
+  width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  margin: 7px;
+  padding: 10px;
+}
+
+.dotsImage {
+  margin-left: auto;
+  margin-bottom: 7px;
+  margin-right: 5px;
+}
+
+.moreBtnFolder {
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.star > svg {
+  vertical-align: middle;
+}
+
+.price {
+  font-size: 22px;
+  text-align: right;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.giftButton {
+  width: 120px;
+  height: 38px;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  color: #ff8626;
+  border: 1px solid #ff8626;
+  border-radius: 15px;
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+
+.giftButton:hover,
+.giftButton:focus {
+  color: #828282;
+  border-color: #bdbdbd;
+  background-color: #e5e5e5;
+}
+
+.giftStatus {
+  vertical-align: middle;
+  text-align: center;
+  width: 120px;
+  height: 38px;
+  padding: 11px 5px;
+  outline: 0;
+  font-size: 16px;
+  line-height: 1;
+  color: #828282;
+  margin: 0 0 0 auto;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 0 10px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .infoBlock {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .giftInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .giftButton {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .giftStatus {
+    margin: 0 auto 0 auto;
+  }
+  .giftImageThumb {
+    width: 100%;
+    height: auto;
+  }
+
+  .giftCard {
+    width: 100%;
+  }
+
+  .giftIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  .giftTitle {
+    font-size: 22px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: -7px;
+  }
+
+  .giftCard {
+    width: 337px;
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.title{
+  width: 595px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  color: #FFFFFF;
+}
+
+.imgBlock{
+  width: 705px;
+}
+/* С картинкой фигня, утром поправлю с Наташей   */
+
+.img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .title{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .imgBlock{
+    display: none;
+  }
+  .title{
+    margin: 20px auto 40px auto;
+  }
+  .rightbar{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .imgBlock{
+    margin-left: 40px;
+  }
+  .title{
+    margin: 0;
+    margin-left: 71px;
+    margin-bottom: 44px;
+  }
+}

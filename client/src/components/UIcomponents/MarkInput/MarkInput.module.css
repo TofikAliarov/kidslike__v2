@@ -1,0 +1,32 @@
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.inputName {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.inputMark {
+  padding-left: 40px;
+  padding-right: 10px;
+  width: 170px;
+  height: 44px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: url(../../../img/svg/star_small.svg) 12% / 15% no-repeat;
+  background-size: 17px;
+  outline: 0;
+}
+
+.inputMark:focus {
+  border: 1px solid #ffbe9d;
+}

@@ -1,0 +1,66 @@
+body {
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400; /* IE9 Compat Modes */
+  src:/* IE6-IE8 */ url('./fonts/rubik-v10-latin_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('./fonts/rubik-v10-latin_cyrillic-regular.woff') format('woff');
+  /* Modern Browsers */
+}
+/* rubik-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500; /* IE9 Compat Modes */
+  src: /* IE6-IE8 */ url('./fonts/rubik-v10-latin_cyrillic-500.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('./fonts/rubik-v10-latin_cyrillic-500.woff')
+      format('woff');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900; /* IE9 Compat Modes */
+  src: /* IE6-IE8 */ url('./fonts/rubik-v11-latin-900.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./fonts/rubik-v11-latin-900.woff')
+      format('woff');
+}
+/* 
+/* a {
+  text-decoration: none;
+  color: rgba(139, 0, 0, 1);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+a:hover {
+  color: brown;
+  background-color: burlywood;
+} */
+button {
+  display: inline-block;
+}
+
+h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+img {
+  display: block;
+}
+ul {
+  padding: 0;
+}

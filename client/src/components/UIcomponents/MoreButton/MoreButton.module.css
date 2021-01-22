@@ -1,0 +1,30 @@
+.drop_down_folder {
+  position: relative;
+  width: 16px;
+  height: 4px;
+  margin: 0 0 0 auto;
+}
+
+.btn {
+  display: block;
+  width: 16px;
+  height: 4px;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+  border: none;
+  background-image: url(../../../img/svg/dots-grey.svg),
+    url(../../../img/svg/dots-black.svg);
+  background-size: auto, 0;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  outline: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  background-size: 0, auto;
+}
+
+@media (max-width: 768px) {
+}

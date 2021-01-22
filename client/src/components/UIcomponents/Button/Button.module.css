@@ -1,0 +1,88 @@
+.button {
+  display: inline-block;
+  min-width: 220px;
+  height: 44px;
+  padding: 12px 18px;
+  border-radius: 20px;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.button[disabled] {
+  cursor: default;
+}
+
+.ButtonOrange {
+  composes: button;
+  border: 1px solid #ff8626;
+  background-color: #ff8626;
+  color: #ffffff;
+  margin-left: auto;
+}
+
+.ButtonWhite {
+  composes: button;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #ff8626;
+}
+
+.ButtonTransparent,
+.ButtonBordered {
+  composes: button;
+  border: 1px solid #bdbdbd;
+  background-color: transparent;
+  color: #bdbdbd;
+}
+
+.ButtonGrey {
+  composes: button;
+  border: 1px solid #ffffff;
+  background-color: #bdbdbd;
+  color: #ffffff;
+}
+
+.ButtonOrange:hover,
+.ButtonOrange:focus {
+  background-color: #ffa273;
+  outline: 0;
+}
+.ButtonOrange[disabled]:hover,
+.ButtonOrange[disabled]:focus {
+  border: 1px solid #ff8626;
+  background-color: #ff8626;
+  outline: 0;
+}
+
+.ButtonWhite:hover,
+.ButtonWhite:focus {
+  background-color: #ffdfcf;
+  outline: 0;
+}
+
+.ButtonTransparent:hover,
+.ButtonTransparent:focus {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #ff8626;
+  outline: 0;
+}
+
+.ButtonGrey:hover,
+.ButtonGrey:focus {
+  background-color: #ffa273;
+  border: 1px solid #ffa273;
+  outline: 0;
+}
+
+.ButtonBordered:hover,
+.ButtonBordered:focus {
+  background-color: #ffffff;
+  border: 1px solid #ffa273;
+  color: #ff8626;
+  outline: 0;
+}
